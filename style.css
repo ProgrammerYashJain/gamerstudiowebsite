@@ -1,0 +1,983 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+}
+
+.games-sec-2 h3{
+    font-weight: 550;
+}
+
+.console-sec-2 h3{
+    font-weight: 550;
+}
+
+:root {
+    --color: rgb(159, 192, 55);
+    --secondcolor: white;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #333;
+}
+
+.navbar {
+    height: 11vh;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-size: 4vh;
+    margin: 0 20px;
+    color: var(--secondcolor);
+    font-weight: 350;
+}
+
+.navbar #placeholder {
+    text-align: center;
+    height: 5vh;
+    width: 16vw;
+    margin: 0 20px;
+    background-color: #333;
+    border: 5px solid transparent;
+    color: var(--secondcolor);
+    border-radius: 2px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    padding: 0 12px;
+    font-size: 3vh;
+    color: var(--secondcolor);
+}
+
+.navbar ul li a:hover {
+    color: var(--color);
+}
+
+.main-section {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imgs/bg.jpeg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.main-section h1 {
+    color: white;
+    font-size: 5vh;
+}
+
+.main-section p {
+    line-height: 1.5;
+    margin: 20px 0;
+    text-align: center;
+    color: white;
+    font-size: 2vh;
+}
+
+.main-section span {
+    color: var(--color);
+    font-family: fantasy;
+}
+
+#btn {
+    height: 5.5vh;
+    width: 10vw;
+    border: 2px solid var(--color);
+    background-color: var(--color);
+    color: black;
+    font-size: 2vh;
+    transition: 1s;
+}
+
+#btn:hover,
+:focus {
+    background-color: transparent;
+    color: white;
+}
+
+.main-section-2 {
+    height: 90vh;
+    width: 100%;
+}
+
+.main-section-2 .text-section-2 h1 {
+    margin: 20px 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 5vh;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+}
+
+.games-sec-2 {
+    display: flex;
+    margin: 6.5vh 3.5vw;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.games-sec-2 .box1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imgs/box-1img.png);
+    background-size: cover;
+    height: 35vh;
+    width: 25vw;
+}
+
+.games-sec-2 .box2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imgs/box-2img.jpeg);
+    background-size: cover;
+    background-position: center center;
+    height: 35vh;
+    width: 25vw;
+}
+
+
+.games-sec-2 .box3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imgs/box-3img.jpeg);
+    background-size: cover;
+    background-position: center center;
+    height: 35vh;
+    width: 25vw;
+}
+
+.games-sec-2 .box4 {
+    margin-top: 1.5vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imgs/box-4img.jpeg);
+    background-size: cover;
+    background-position: center center;
+    height: 35vh;
+    width: 25vw;
+}
+
+.games-sec-2 .box5 {
+    margin-top: 1.5vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imgs/box-5img.jpeg);
+    background-size: cover;
+    background-position: center center;
+    height: 35vh;
+    width: 25vw;
+}
+
+.games-sec-2 .box6 {
+    margin-top: 1.5vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imgs/box-6img.jpeg);
+    background-size: cover;
+    background-position: center center;
+    height: 35vh;
+    width: 25vw;
+}
+
+.games-sec-2 .box1 .box1-text {
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2.5vh;
+    color: white;
+    font-weight: 700;
+}
+
+.games-sec-2 .box1 .box1-text p {
+    margin: 1vh 0;
+    text-align: center;
+    font-size: 1.9vh;
+}
+
+.games-sec-2 .box2 .box2-text {
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2.5vh;
+    color: white;
+    font-weight: 700;
+}
+
+
+.games-sec-2 .box2 .box2-text p {
+    margin: 1vh 0;
+    text-align: center;
+    font-size: 1.9vh;
+}
+
+
+.games-sec-2 .box3 .box3-text {
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2.5vh;
+    color: white;
+    font-weight: 700;
+}
+
+.games-sec-2 .box3 .box3-text p {
+    margin: 1vh 0;
+    text-align: center;
+    font-size: 1.9vh;
+}
+
+.games-sec-2 .box4 .box4-text {
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2.5vh;
+    color: white;
+    font-weight: 700;
+}
+
+.games-sec-2 .box4 .box4-text p {
+    margin: 1vh 0;
+    text-align: center;
+    font-size: 1.9vh;
+}
+
+.games-sec-2 .box5 .box5-text {
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2.5vh;
+    color: white;
+    font-weight: 700;
+}
+
+.games-sec-2 .box5 .box5-text p {
+    margin: 1vh 0;
+    text-align: center;
+    font-size: 1.9vh;
+}
+
+.games-sec-2 .box6 .box6-text {
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2.5vh;
+    color: white;
+    font-weight: 700;
+}
+
+.games-sec-2 .box6 .box6-text p {
+    margin: 1vh 0;
+    text-align: center;
+    font-size: 1.9vh;
+}
+
+#btn-box-1 {
+    height: 5vh;
+    width: 8vw;
+    border: 2px solid var(--color);
+    background-color: var(--color);
+    color: black;
+    font-size: 2vh;
+    transition: 1s;
+    margin-top: 10px;
+}
+
+#btn-box-1:hover,
+:focus {
+    background-color: transparent;
+    color: white;
+}
+
+.main-section-3 {
+    height: 90vh;
+    width: 100%;
+}
+
+.main-section-3 .text-section-3 h1 {
+    margin: 20px 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 5vh;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+}
+
+.console-sec-2 {
+    display: flex;
+    margin: 6.5vh 3.5vw;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.console-sec-2 .box1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(console-imgs/box-c1.jpeg);
+    background-size: cover;
+    height: 35vh;
+    width: 25vw;
+}
+
+.console-sec-2 .box2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(console-imgs/box-c2.jpeg);
+    background-size: cover;
+    background-position: center center;
+    height: 35vh;
+    width: 25vw;
+}
+
+
+.console-sec-2 .box3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(console-imgs/box-c3.jpeg);
+    background-size: cover;
+    background-position: center center;
+    height: 35vh;
+    width: 25vw;
+}
+
+.console-sec-2 .box4 {
+    margin-top: 1.5vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(console-imgs/box-c4.webp);
+    background-size: cover;
+    background-position: center center;
+    height: 35vh;
+    width: 25vw;
+}
+
+.console-sec-2 .box5 {
+    margin-top: 1.5vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(console-imgs/box-c5.webp);
+    background-size: cover;
+    background-position: center center;
+    height: 35vh;
+    width: 25vw;
+}
+
+.console-sec-2 .box6 {
+    margin-top: 1.5vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(console-imgs/box-c6.jpeg);
+    background-size: cover;
+    background-position: center center;
+    height: 35vh;
+    width: 25vw;
+}
+
+.console-sec-2 .box1 .box1-text {
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2.5vh;
+    color: white;
+    font-weight: 700;
+}
+
+.console-sec-2 .box1 .box1-text p {
+    margin: 1vh 0;
+    text-align: center;
+    font-size: 2.8vh;
+}
+
+.console-sec-2 .box2 .box2-text {
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2.5vh;
+    color: white;
+    font-weight: 700;
+}
+
+
+.console-sec-2 .box2 .box2-text p {
+    margin: 1vh 0;
+    text-align: center;
+    font-size: 2.8vh;
+}
+
+
+.console-sec-2 .box3 .box3-text {
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2.5vh;
+    color: white;
+    font-weight: 700;
+}
+
+.console-sec-2 .box3 .box3-text p {
+    margin: 1vh 0;
+    text-align: center;
+    font-size: 2.8vh;
+}
+
+.console-sec-2 .box4 .box4-text {
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2.5vh;
+    color: white;
+    font-weight: 700;
+}
+
+.console-sec-2 .box4 .box4-text p {
+    margin: 1vh 0;
+    text-align: center;
+    font-size: 2.8vh;
+}
+
+.console-sec-2 .box5 .box5-text {
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2.5vh;
+    color: white;
+    font-weight: 700;
+}
+
+.console-sec-2 .box5 .box5-text p {
+    margin: 1vh 0;
+    text-align: center;
+    font-size: 2.8vh;
+}
+
+.console-sec-2 .box6 .box6-text {
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2.5vh;
+    color: white;
+    font-weight: 700;
+}
+
+.console-sec-2 .box6 .box6-text p {
+    margin: 1vh 0;
+    text-align: center;
+    font-size: 2.8vh;
+}
+
+.get-in-touch {
+    /* background-color: red; */
+    height: 45vh;
+    width: 100%;
+}
+
+.get-in-touch .get-in-touch-text h1 {
+    margin: 20px 20px;
+    color: var(--secondcolor);
+    font-weight: 600;
+    font-size: 5vh;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+}
+
+.get-int-touch-l-r {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.get-in-touch-left {
+    margin: 6.5vh 3.5vw;
+    width: 50%;
+    color: white;
+}
+
+.icon-l {
+    display: flex;
+    align-items: center;
+
+}
+
+.icon-l-text {
+    margin: 3vh 3vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.get-in-touch-left .icon-l i {
+    margin: 3vh 0;
+    font-size: 7.5vh;
+}
+
+.get-in-touch-left p {
+    margin: 2vh 0;
+}
+
+.footer-sec {
+    background-color: black;
+    width: 100%;
+    height: 28.5vh;
+    display: flex;
+    color: var(--secondcolor);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-sec #footer-sec-btn {
+    height: 5.5vh;
+    width: 10vw;
+    border: 2px solid var(--color);
+    background-color: var(--color);
+    color: black;
+    font-size: 2vh;
+    font-weight: 700;
+    transition: 1s;
+}
+
+.footer-sec #footer-sec-btn:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.footer-sec .icons-footer {
+    margin: 4vh 4vh;
+}
+
+.footer-sec .icons-footer i {
+    cursor: pointer;
+    font-size: 4.5vh;
+    margin: 0 3vh;
+}
+
+@media (min-width:0px) and (max-width:319px) {
+    .navbar h1 {
+        font-size: 13px;
+    }
+
+    .navbar ul li a {
+        display: none;
+    }
+
+    .navbar #placeholder {
+        width: 38vw;
+    }
+
+    .main-section h1 {
+        font-size: 4vh;
+        text-align: center;
+    }
+
+
+    .main-section #btn {
+        width: 37vw;
+    }
+
+    .main-section-2 {
+        height: 90vh;
+        width: 100%;
+    }
+
+    .games-sec-2 .box1 .box1-text {
+        font-size: 1.5vh;
+        text-align: center;
+    }
+
+    #btn-box-1 {
+        height: 5vh;
+        width: 22vw;
+    }
+
+    .games-sec-2 .box4 .box4-text {
+        font-size: 1.5vh;
+        text-align: center;
+    }
+
+    .console-sec-2 .box1 .box1-text {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .console-sec-2 .box2 .box2-text {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .console-sec-2 .box3 .box3-text {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .console-sec-2 .box4 .box4-text {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .console-sec-2 .box5 .box5-text {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .console-sec-2 .box6 .box6-text {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .get-in-touch-left h1 {
+        font-size: 2vh;
+        text-align: center;
+        margin-left: auto;
+    }
+
+    .get-in-touch-left p {
+        margin: 2vh 0;
+        font-size: 1.2vh;
+        text-align: center;
+    }
+
+    .icon-l-text h2 {
+        font-size: 1.5vh;
+    }
+
+    .get-in-touch-left .icon-l i {
+        font-size: 4.5vh;
+    }
+
+    #h33 {
+        font-size: 7px;
+    }
+
+    .footer-sec {
+        height: 26.5vh;
+    }
+
+    .footer-sec .icons-footer {
+        margin: 4vh 1vh;
+    }
+
+    .footer-sec #footer-sec-btn {
+        height: 5.5vh;
+        width: 33vw;
+    }
+
+    .footer-sec .icons-footer i {
+        cursor: pointer;
+        font-size: 2.5vh;
+        margin: 0px 2vh;
+    }
+
+    .footer-sec .footer-text p {
+        font-size: 4vw;
+    }
+
+    .games-sec-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 2vh;
+    }
+
+    .main-section-2 .games-sec-2 .box1 p {
+        display: none;
+    }
+
+    .main-section-2 .games-sec-2 .box2 p {
+        display: none;
+    }
+
+    .main-section-2 .games-sec-2 .box3 p {
+        display: none;
+    }
+
+    .main-section-2 .games-sec-2 .box4 p {
+        display: none;
+    }
+
+    .main-section-2 .games-sec-2 .box5 p {
+        display: none;
+    }
+
+    .main-section-2 .games-sec-2 .box6 p {
+        display: none;
+    }
+
+    .main-section-2 .games-sec-2 .box1 h3 {
+        font-size: 4vw;
+        text-align: center;
+        font-weight: 350;
+    }
+
+    .main-section-2 .games-sec-2 .box2 h3 {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .main-section-2 .games-sec-2 .box3 h3 {
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    .main-section-2 .games-sec-2 .box4 h3 {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .main-section-2 .games-sec-2 .box5 h3 {
+        font-size: 5vw;
+        text-align: center;
+        font-weight: 350;
+    }
+
+    .main-section-2 .games-sec-2 .box6 h3 {
+        font-size: 4.5vw;
+        text-align: center;
+        font-weight: 350;
+    }
+
+
+    .get-in-touch-left {
+        margin: 0.5vh 3.5vw;
+    }
+
+}
+
+@media (min-width:320px) and (max-width:767px) {
+    .navbar h1 {
+        font-size: 2.5vh;
+    }
+
+    .navbar ul li a {
+        display: none;
+    }
+
+    .navbar #placeholder {
+        width: 29vw;
+    }
+
+    .main-section h1 {
+        font-size: 4vh;
+        text-align: center;
+    }
+
+    .games-sec-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 2vh;
+    }
+
+    .main-section #btn {
+        width: 50vw;
+    }
+
+    .main-section-2 {
+        height: 90vh;
+        width: 100%;
+    }
+
+    .games-sec-2 .box1 .box1-text {
+        font-size: 1.5vh;
+        text-align: center;
+    }
+
+    #btn-box-1 {
+        height: 6vh;
+        width: 20vw;
+    }
+
+    .games-sec-2 .box4 .box4-text {
+        font-size: 1.5vh;
+        text-align: center;
+    }
+
+    .console-sec-2 .box1 .box1-text {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .console-sec-2 .box2 .box2-text {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .console-sec-2 .box3 .box3-text {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .console-sec-2 .box4 .box4-text {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .console-sec-2 .box5 .box5-text {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .console-sec-2 .box6 .box6-text {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .get-in-touch-left h1 {
+        font-size: 3vh;
+    }
+
+    .get-in-touch-left p {
+        margin: 2vh 0;
+        font-size: 1.2vh;
+        text-align: center;
+    }
+
+    .icon-l-text h2 {
+        font-size: 2.5vh;
+    }
+
+    .get-in-touch-left .icon-l i {
+        font-size: 4.5vh;
+    }
+
+    #h33 {
+        font-size: 4vw;
+    }
+
+    .footer-sec {
+        height: 26.5vh;
+    }
+
+    .footer-sec #footer-sec-btn {
+        height: 5.5vh;
+        width: 33vw;
+    }
+
+    .footer-sec .icons-footer i {
+        cursor: pointer;
+        font-size: 2.5vh;
+        margin: 0px 2vh;
+    }
+
+    .footer-sec .footer-text p {
+        font-size: 4vw;
+    }
+
+    .main-section-2 .games-sec-2 .box1 p {
+        display: none;
+    }
+
+    .main-section-2 .games-sec-2 .box2 p {
+        display: none;
+    }
+
+    .main-section-2 .games-sec-2 .box3 p {
+        display: none;
+    }
+
+    .main-section-2 .games-sec-2 .box4 p {
+        display: none;
+    }
+
+    .main-section-2 .games-sec-2 .box5 p {
+        display: none;
+    }
+
+    .main-section-2 .games-sec-2 .box6 p {
+        display: none;
+    }
+
+    .main-section-2 .games-sec-2 .box1 h3 {
+        font-size: 4vw;
+        text-align: center;
+        font-weight: 350;
+    }
+
+    .main-section-2 .games-sec-2 .box2 h3 {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .main-section-2 .games-sec-2 .box3 h3 {
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    .main-section-2 .games-sec-2 .box4 h3 {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .main-section-2 .games-sec-2 .box5 h3 {
+        font-size: 5vw;
+        text-align: center;
+        font-weight: 350;
+    }
+
+    .main-section-2 .games-sec-2 .box6 h3 {
+        font-size: 5vw;
+        text-align: center;
+        font-weight: 350;
+    }
+
+
+    .get-in-touch-left {
+        margin: 0.5vh 3.5vw;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1022px) {
+    .games-sec-2 .box1 .box1-text {
+        font-size: 2.5vh;
+        font-weight: 350;
+    }
+
+    .games-sec-2 .box4 .box4-text {
+        font-size: 2.5vh;
+        font-weight: 350;
+    }
+
+    .footer-sec #footer-sec-btn {
+        height: 5.5vh;
+        width: 13vw;
+    }
+
+}
